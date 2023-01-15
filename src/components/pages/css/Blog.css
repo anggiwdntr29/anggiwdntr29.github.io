@@ -1,0 +1,48 @@
+.Blog-Container {
+    padding: 12px 10px;
+    width: 600px;
+}
+
+.Blog-Card {
+    display: flex;
+    height: 160px;
+    gap: 20px;
+    transform: scale(1);
+    margin-bottom: 20px;
+}
+
+.Blog-Img {
+    width: 260px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.Text-Blog {
+    width: 320px;
+    padding: 12px 0px;
+}
+
+.Header {
+    display: flex;
+    gap: 4px;
+    font-size: 14px;
+    color: #444444;
+}
+
+.Judul-Blog {
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--TextColor);
+}
+
+.Deskripsi-Blog {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 18px;
+    color: #444444;
+}
+
+.Link:hover .Blog-Card {
+    transform: scale(.95);
+    transition: all ease-in-out .3s;
+}

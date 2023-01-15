@@ -1,0 +1,95 @@
+.Profile-Container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    gap: 12px;
+}
+
+.Profile {
+    display: flex;
+    align-items: center;
+}
+
+.Img-Container {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Profile-Img{
+    border-radius: 50%;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}
+
+.Nama-Sosmed {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.Nama {
+    font-size: 12px;
+    color: var(--TextColor);
+}
+
+.Social {
+    display: flex;
+    justify-content: space-evenly;
+    width: 200px;
+}
+
+.Social-Icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--PrimaryColor);
+}
+
+.fa-brands {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    padding: 12px;
+    border-radius: 50%;
+    color: var(--PrimaryColor);
+    background-color: #fff;
+}
+
+.Deskripsi {
+    font-size: 16px;
+    text-align: left;
+    color: var(--TextColor);
+}
+
+.Deskripsi a {
+    text-decoration: underline;
+    color: var(--TextColor)
+}
+
+
+.Deskripsi a:hover {
+    color: rgb(158, 158, 158);
+    transition: all .1s ease-out;
+}
+
+.Img-Container:hover {
+    background-color: var(--PrimaryColor);
+    transition: all ease .1s;
+}
+
+.Social-Icon:hover .fa-brands {
+    border: 4px solid #fff;
+    transition: all ease .1s;
+}

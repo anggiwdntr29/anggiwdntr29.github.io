@@ -1,0 +1,52 @@
+.Portfolio-Container {
+    padding: 12px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 600px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.Card-Porto {
+    width: 280px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 12px;
+    padding-bottom: 8px;
+}
+
+.Portfolio-Img {
+    border-radius: 12px 12px 0 0;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.Text-Portfolio {
+    padding: 0 16px;
+    text-align: justify;
+}
+
+.Judul-Portfolio {
+    font-size: 20px;
+    color: var(--TextColor);
+    font-weight: 700;
+}
+
+.deskripsi-Portfolio {
+    display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+    margin-bottom: 12px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 15px;
+    color: #444444;
+}
+
+.Card-Porto:hover .Judul-Portfolio {
+    text-decoration: underline;
+    color: #444444;
+    transition: all ease .2s;
+}
