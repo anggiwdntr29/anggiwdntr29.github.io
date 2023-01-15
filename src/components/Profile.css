@@ -14,7 +14,7 @@
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: #fff;
+    background-color: var(--PrimaryColor);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -84,12 +84,40 @@
     transition: all .1s ease-out;
 }
 
-.Img-Container:hover {
-    background-color: var(--PrimaryColor);
-    transition: all ease .1s;
-}
-
 .Social-Icon:hover .fa-brands {
     border: 4px solid #fff;
     transition: all ease .1s;
 }
+
+
+@media(max-width: 480px){
+    .Profile-Container {
+        width: 100%;
+        justify-content: center;
+    }
+    .Profile {
+        justify-content: center;
+    }
+    .Nama {
+        text-align: center;
+        font-size: 10px;
+    }
+    .Img-Container{
+        width: 120px;
+        height: 120px;
+    }
+    .Social-Icon {
+        width: 44px;
+        height: 44px;
+    }
+    .fa-brands{
+        width: 26px;
+        height: 26px;
+    }
+    .Deskripsi{
+        font-size: 15px;
+        padding: 0 20px;
+        text-align: center;
+    }
+}
+

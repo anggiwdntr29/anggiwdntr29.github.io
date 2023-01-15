@@ -48,3 +48,16 @@ Link.active {
 .activeLink{
     background-color: var(--TextColor)
 }
+
+@media(max-width: 480px) {
+    .Menu {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        align-items: center;
+    }
+    .List-Menu {
+        width: 100%;
+        font-size: 10px;
+    }
+}

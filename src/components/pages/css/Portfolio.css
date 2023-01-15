@@ -50,3 +50,31 @@
     color: #444444;
     transition: all ease .2s;
 }
+
+@media(max-width: 480px) {
+    .Portfolio-Container {
+        padding: 12px 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        width: 100%;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .Card-Porto{
+        width: 100%;
+    }
+
+    .Text-Porto {
+        width: 100%;
+    }
+
+    .Judul-Porto {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .Deskripsi-Porto {
+        font-size: 16px;
+    }
+}

@@ -46,3 +46,30 @@
     transform: scale(.95);
     transition: all ease-in-out .3s;
 }
+
+@media(max-width: 480px){
+    .Blog-Container{
+        width: 100%;
+    }
+    .Blog-Card{
+        width: 100%;
+    }
+    .Blog-Img {
+        width: 120px;
+        height: 160px;
+        border-radius: 8px;
+    }
+    .Text-Blog {
+        width: 100%;
+    }
+    .Header {
+        font-size: 10px;
+    }
+    .Judul-Blog{
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .Deskripsi-Blog{
+        font-size: 16px;
+    }
+}
