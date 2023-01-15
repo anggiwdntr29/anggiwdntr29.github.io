@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/anggiwdntr29/anggiwdntr29.github.io/static/css/main.8efde07d.css",
+    "main.js": "/anggiwdntr29/anggiwdntr29.github.io/static/js/main.e274fae5.js",
+    "static/media/Profile.JPG": "/anggiwdntr29/anggiwdntr29.github.io/static/media/Profile.176df2b765293dec26d7.JPG",
+    "index.html": "/anggiwdntr29/anggiwdntr29.github.io/index.html",
+    "main.8efde07d.css.map": "/anggiwdntr29/anggiwdntr29.github.io/static/css/main.8efde07d.css.map",
+    "main.e274fae5.js.map": "/anggiwdntr29/anggiwdntr29.github.io/static/js/main.e274fae5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8efde07d.css",
+    "static/js/main.e274fae5.js"
+  ]
+}
