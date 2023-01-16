@@ -49,6 +49,7 @@ function Profile() {
           </a>{" "}
           Semester 5. Tertarik dibidang Front End Eginer. Hobi bermain Game.
         </p>
+        <p>Ini masi data dummy ya bang</p>
       </div>
     </div>
   );
