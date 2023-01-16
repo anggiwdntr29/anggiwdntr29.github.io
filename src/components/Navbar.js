@@ -10,13 +10,19 @@ export default function Navbar() {
     <div className="Navbar-Container">
       <ul className="Menu">
         <NavLink to="/">
-          <div className="List-Menu">Blog</div>
+          <div className="List-Menu">
+            <i class="fa-sharp fa-solid fa-bookmark"></i>Blog
+          </div>
         </NavLink>
         <NavLink to="/Portfolio">
-          <div className="List-Menu">Portfolio</div>
+          <div className="List-Menu">
+            <i class="fa-solid fa-pen-nib"></i>Portfolio
+          </div>
         </NavLink>
         <NavLink to="/Achievement">
-          <div className="List-Menu">Achievement</div>
+          <div className="List-Menu">
+            <i class="fa-solid fa-star"></i>Achievement
+          </div>
         </NavLink>
       </ul>
       <Routes>

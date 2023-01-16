@@ -7,20 +7,20 @@ export default function Blog() {
     <div className="Blog-Container">
       {DataBlog.map(({ src, judul, deskripsi, link, tgl, kategori }, id) => (
         <a href={link} className="Link">
-          <div key={id} className="Blog-Card">
+          <div key={id} className="Card-Blog">
             <img
               src={require(`../../image/${src}`)}
-              alt="Blog-Img"
-              className="Blog-Img"
+              alt={src}
+              className="Img-Blog"
             />
-            <div className="Text-Blog">
-              <div className="Header">
-                <p className="Kategori-Blog">{kategori}</p>
+            <div className="Text">
+              <div className="Kategori-Container">
+                <p className="Kategori">{kategori}</p>
                 <p> | </p>
-                <p className="Tgl-Blog">{tgl}</p>
+                <p className="Tgl">{tgl}</p>
               </div>
-              <h1 className="Judul-Blog">{judul}</h1>
-              <p className="Deskripsi-Blog">{deskripsi}</p>
+              <h1 className="Judul">{judul}</h1>
+              <p className="Isi">{deskripsi}</p>
             </div>
           </div>
         </a>

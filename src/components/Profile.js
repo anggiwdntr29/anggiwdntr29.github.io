@@ -4,7 +4,7 @@ import "./../App.css";
 
 function Profile() {
   return (
-    <div className="Profile-Container">
+    <div className="Container-Profile">
       <div className="Nama">
         <h1>Anggi Widiantara</h1>
       </div>

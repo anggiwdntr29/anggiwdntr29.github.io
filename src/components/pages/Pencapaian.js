@@ -4,20 +4,22 @@ import "./../../App.css";
 
 export default function Pencapaian() {
   return (
-    <div className="Achievement-Container">
+    <div className="Achi-Container">
       {DataPencapaian.map(
         ({ src, judul, kategori, deskripsi, tgl, icon }, id) => (
           <div key={id} className="Card-Achi">
-            <div className="Icon">{icon}</div>
+            <div className="Icon-Achi">
+              <p>{icon}</p>
+            </div>
             <img
               src={require(`../../image/${src}`)}
-              alt="Achi-Img"
-              className="Achi-Img"
+              alt={src}
+              className="Img-Achi"
             />
-            <div className="Text-Achi">
-              <p className="Tgl-Achi">{[tgl]}</p>
-              <h1 className="Judul-Achi">{judul}</h1>
-              <p className="deskripsi-Achi">{deskripsi}</p>
+            <div className="Text">
+              <p className="Tgl">{tgl}</p>
+              <h1 className="Judul">{judul}</h1>
+              <p className="Isi">{deskripsi}</p>
             </div>
           </div>
         )

@@ -1,446 +1,273 @@
 :root {
-  --PrimaryColor : #d2d2d2;
-  --TextColor : #2e2e2e;
+  --PrimaryColor : #828181;
+  --TextColor : #dededf;
+  --BgColor : #2e2f35;
+  --SecondaryColor : #ababab;
+  --ThirdColor : #8b8b8b;
 }
 
-* {
+*{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  text-decoration: none;
   font-family: 'Poppins', sans-serif;
 }
 
-
+body {
+  background-color: var(--BgColor);
+}
 
 .App {
-  padding: 20px 0;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
+  padding: 1.5rem 5rem;
+  display: grid; 
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem; 
 }
 
-@media (max-width: 480px) {
-  .App {
-    flex-direction: column;
-    padding: 20px 20px;
-  }
+.Container-Profile {
+  display: grid;
+  align-content: flex-start; 
+  gap: .5rem;
 }
-.Profile-Container {
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  gap: 12px;
+
+.Nama {
+  font-size: .75rem;
+  font-weight: 800;
+  color: var(--TextColor);
 }
 
 .Profile {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
   align-items: center;
 }
 
 .Img-Container {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  background-color: var(--PrimaryColor);
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 1px solid var(--PrimaryColor);
+}
+
+.Img-Container:hover {
+  background-color: var(--PrimaryColor);
+  transition: all ease .3s;
 }
 
 .Profile-Img {
-  border-radius: 50%;
-  width: 90%;
-  height: 90%;
+  width: 110px;
+  height: 110px;
   object-fit: cover;
-}
-
-.Nama-Sosmed {
-  display: flex;
-  flex-direction: column;
-  gap: 4px;
-}
-
-.Nama {
-  font-size: 12px;
-  color: var(--TextColor);
+  border-radius: 50%;
 }
 
 .Social {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   justify-content: space-evenly;
-  width: 200px;
+  align-items: center;
 }
 
 .Social-Icon {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-  height: 40px;
+  font-size: 20px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
+  border: 1px solid var(--PrimaryColor);
+  color: var(--BgColor);
+}
+
+.Social-Icon:hover {
   background-color: var(--PrimaryColor);
+  transition: all ease .2s;
 }
 
 .fa-brands {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 24px;
-  height: 24px;
-  font-size: 14px;
-  padding: 12px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
-  color: var(--PrimaryColor);
-  background-color: #fff;
+  background-color: var(--TextColor);
 }
 
 .Deskripsi {
-  font-size: 16px;
-  text-align: left;
   color: var(--TextColor);
 }
 
 .Deskripsi a {
+  color: var(--TextColor);
   text-decoration: underline;
-  color: var(--TextColor)
 }
-
 
 .Deskripsi a:hover {
-  color: rgb(158, 158, 158);
-  transition: all .1s ease-out;
-}
-
-.Social-Icon:hover .fa-brands {
-  border: 4px solid #fff;
-  transition: all ease .1s;
-}
-
-
-@media(max-width: 480px) {
-  .Profile-Container {
-    width: 100%;
-    justify-content: center;
-  }
-
-  .Profile {
-    justify-content: center;
-  }
-
-  .Nama {
-    text-align: center;
-    font-size: 10px;
-  }
-
-  .Img-Container {
-    width: 120px;
-    height: 120px;
-  }
-
-  .Social-Icon {
-    width: 44px;
-    height: 44px;
-  }
-
-  .fa-brands {
-    width: 26px;
-    height: 26px;
-  }
-
-  .Deskripsi {
-    font-size: 15px;
-    padding: 0 20px;
-    text-align: center;
-  }
-}
-
-* {
-  list-style: none;
-  text-decoration: none;
-}
-
-.active {
-  border-radius: 32px;
-  transition: all .1s ease-in;
-}
-
-.Menu {
-  width: 600px;
-  padding: 2px;
-  display: flex;
-  justify-content: space-evenly;
-  border: 2px solid var(--PrimaryColor);
-  border-radius: 32px;
-}
-
-.List-Menu {
-  width: 198px;
-  text-align: center;
-  padding: 10px;
-  border-radius: 32px;
-  font-size: 14px;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: var(--TextColor);
-}
-
-
-.List-Menu:hover {
-  background-color: var(--PrimaryColor);
-}
-
-.Navbar-Container {
-  margin-bottom: 20px;
-}
-
-.active {
-  background-color: var(--PrimaryColor);
-}
-
-Link.active {
-  background-color: var(--PrimaryColor);
-}
-
-.activeLink {
-  background-color: var(--TextColor)
-}
-
-@media(max-width: 480px) {
-  .Menu {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    align-items: center;
-  }
-
-  .List-Menu {
-    width: 100%;
-    font-size: 10px;
-  }
-}
-
-.Portfolio-Container {
-  padding: 12px 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 600px;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.Card-Porto {
-  width: 280px;
-  background-color: #ffffff;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-  border-radius: 12px;
-  padding-bottom: 8px;
-}
-
-.Portfolio-Img {
-  border-radius: 12px 12px 0 0;
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
-}
-
-.Text-Portfolio {
-  padding: 0 16px;
-  text-align: justify;
-}
-
-.Judul-Portfolio {
-  font-size: 20px;
-  color: var(--TextColor);
-  font-weight: 700;
-}
-
-.deskripsi-Portfolio {
-  display: -webkit-box;
-  -webkit-line-clamp: 3;
-  -webkit-box-orient: vertical;
-  overflow: hidden;
-  margin-bottom: 12px;
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 15px;
-  color: #444444;
-}
-
-.Card-Porto:hover .Judul-Portfolio {
-  text-decoration: underline;
-  color: #444444;
+  color: var(--PrimaryColor);
   transition: all ease .2s;
 }
 
-@media(max-width: 480px) {
-  .Portfolio-Container {
-    padding: 12px 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    width: 100%;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-
-  .Card-Porto {
-    width: 100%;
-  }
-
-  .Text-Porto {
-    width: 100%;
-  }
-
-  .Judul-Porto {
-    font-size: 20px;
-    line-height: 24px;
-  }
-
-  .Deskripsi-Porto {
-    font-size: 16px;
-  }
+.Navbar-Container {
+  display: grid;
+  gap: 1rem;
 }
 
-.Achievement-Container {
-  padding: 12px 10px;
+.Menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 30px;
+  padding: 8px;
+  border: 2px solid var(--PrimaryColor);
+}
+
+.List-Menu {
+  color: var(--TextColor);
+  text-align: center;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 8px 0;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  width: 600px;
-  gap: 20px;
-  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
 }
 
-.Card-Achi {
-  width: 280px;
-  background-color: #ffffff;
-  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
-  border-radius: 12px;
-  padding: 12px 0;
+.List-Menu i {
+  font-size: 1.2rem;
 }
 
-.Icon {
-  display: flex;
-  justify-content: flex-end;
-  padding: 0 16px 12px 16px;
-  font-size: 18px;
+.active {
+  border-radius: 30px;
+  transition: all .1s ease-in;
+  background-color: var(--PrimaryColor);
 }
 
-.Achi-Img {
+.Blog-Container {
+  display: grid;
+  gap: 2rem;
+}
+
+.Card-Blog {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 1rem;
+}
+
+.Img-Blog {
   width: 100%;
   height: 160px;
   object-fit: cover;
+  border-radius: 18px;
 }
 
-.Text-Achi {
-  padding: 0 16px;
-  text-align: justify;
+.Card-Blog .Text {
+  padding: 16px 0;
 }
 
-.Tgl-Achi {
-  font-size: 12px;
-  font-weight: 400;
-  color: #444444;
-}
-
-.Judul-Achi {
-  font-size: 20px;
-  color: var(--TextColor);
-  font-weight: 700;
-}
-
-.deskripsi-Achi {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 15px;
-  color: #444444;
-}
-
-@media(max-width: 480px) {
-  .Achievement-Container {
-    width: 100%;
-  }
-
-  .Card-Achi {
-    width: 100%;
-  }
-}.Blog-Container {
-  padding: 12px 10px;
-  width: 600px;
-}
-
-.Blog-Card {
+.Kategori-Container {
   display: flex;
-  height: 160px;
-  gap: 20px;
-  transform: scale(1);
-  margin-bottom: 20px;
+  align-items: center;
+  gap: .5rem;
+  color: var(--ThirdColor);
+  font-size: .9rem;
 }
 
-.Blog-Img {
-  width: 260px;
+.Kategori,
+.Tgl {
+  padding: 2px 8px;
+}
+
+.Card-Blog:hover .Kategori,
+.Card-Blog:hover .Tgl {
+  background-color: var(--SecondaryColor);
+  color: var(--BgColor);
+  transition: all ease .3s;
+}
+
+.Judul {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: var(--TextColor);
+}
+
+.Card-Blog .Isi {
+  color: var(--SecondaryColor);
+}
+
+.Card-Blog:hover {
+  transform: scale(.98);
+  transition: all ease .2s;
+}
+
+.Container-Portfolio,
+.Achi-Container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+.Card-Portfolio,
+.Card-Achi {
+  background-color: var(--PrimaryColor);
+  border-radius: 18px 18px 16px 16px;
+  padding-bottom: 12px;
+}
+
+.Img-Portfolio {
+  width: 100%;
   height: 160px;
   object-fit: cover;
-  border-radius: 16px;
+  border-radius: 16px 16px 0px 0;
 }
 
-.Text-Blog {
-  width: 320px;
-  padding: 12px 0px;
+.Img-Achi {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
 }
 
-.Header {
+.Text {
+  padding: 1rem 2rem;
+}
+
+.Card-Portfolio .Kategori-Container p {
+  padding: 2px 8px;
+  margin-top: 4px;
+  color: var(--SecondaryColor);
+  border-bottom: 1px solid var(--TextColor);
+}
+
+.Card-Portfolio:hover .Kategori-Container p {
+  background-color: var(--BgColor);
+  transition: all ease .3s;
+}
+
+.Icon-Achi {
   display: flex;
-  gap: 4px;
-  font-size: 14px;
-  color: #444444;
+  justify-content: flex-end;
+  padding: 8px 20px;
+  font-size: 1.25rem;
 }
 
-.Judul-Blog {
-  font-size: 24px;
-  line-height: 32px;
-  color: var(--TextColor);
+.Card-Achi .Tgl {
+  padding: 0;
+  font-size: .9rem;
+  color: var(--BgColor);
 }
 
-.Deskripsi-Blog {
-  font-family: 'Source Sans Pro', sans-serif;
-  font-size: 18px;
-  color: #444444;
+.Card-Achi:hover .Icon-Achi p {
+  background-color: var(--BgColor);
+  border-radius: 4px;
+  transition: all ease .3s;
 }
 
-.Link:hover .Blog-Card {
-  transform: scale(.95);
-  transition: all ease-in-out .3s;
-}
-
-@media(max-width: 480px) {
-  .Blog-Container {
-    width: 100%;
-  }
-
-  .Blog-Card {
-    width: 100%;
-  }
-
-  .Blog-Img {
-    width: 120px;
-    height: 160px;
-    border-radius: 8px;
-  }
-
-  .Text-Blog {
-    width: 100%;
-  }
-
-  .Header {
-    font-size: 10px;
-  }
-
-  .Judul-Blog {
-    font-size: 20px;
-    line-height: 24px;
-  }
-
-  .Deskripsi-Blog {
-    font-size: 16px;
-  }
+.Isi {
+  color: var(--BgColor);
 }
