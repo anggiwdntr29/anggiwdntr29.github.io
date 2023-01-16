@@ -278,7 +278,7 @@ body {
   color: var(--BgColor);
 }
 
-@media (max-width : 480px) {
+@media (max-width : 630px) {
   .App {
     padding: 1rem;
     display: grid;
@@ -370,6 +370,73 @@ body {
 
   .Container-Achi {
     grid-template-columns: none;
+  }
+
+  .Card-Achi .Text {
+    padding: 4px 26px;
+  }
+
+  .Card-Achi .Isi {
+    font-size: 80%;
+  }
+
+  .Card-Achi .Tgl {
+    font-size: 70%;
+  }
+}
+
+@media (min-width : 630px) and (max-width:1024px) {
+  .App {
+    padding: 1rem 4rem;
+    display: grid;
+    grid-template-columns: none;
+    gap: 2rem;
+  }
+
+  .Container-Profile {
+    justify-items: center;
+  }
+
+  .Profile {
+    gap: 1rem;
+  }
+
+  .Deskripsi {
+    padding: 0 6vw;
+  }
+
+  .Nama,
+  .Deskripsi {
+    text-align: center;
+  }
+
+  .Img-Blog {
+    height: 120px;
+    border-radius: 12px;
+  }
+
+  .Card-Blog .Text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+  }
+
+  .Kategori-Container {
+    font-size: 90%;
+  }
+
+  .Judul {
+    font-size: 120%;
+    line-height: 28px;
+  }
+
+  .Img-Portfolio {
+    height: 140px;
+  }
+
+  .Card-Portfolio .Text {
+    padding: 12px 32px;
   }
 
   .Card-Achi .Text {
