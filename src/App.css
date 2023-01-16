@@ -101,7 +101,7 @@ body {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background-color: var(--TextColor);
+  background-color: var(--PrimaryColor);
 }
 
 .Deskripsi {
