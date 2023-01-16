@@ -6,6 +6,10 @@
   --ThirdColor : #8b8b8b;
 }
 
+html {
+  font-size: 100%;
+}
+
 *{
   padding: 0;
   margin: 0;
@@ -41,6 +45,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 2fr;
   align-items: center;
+  justify-content: center;
 }
 
 .Img-Container {
@@ -207,10 +212,11 @@ body {
 }
 
 .Container-Portfolio,
-.Achi-Container {
+.Container-Achi {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .Card-Portfolio,
@@ -270,4 +276,97 @@ body {
 
 .Isi {
   color: var(--BgColor);
+}
+
+@media (max-width : 480px) {
+  .App {
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: none; 
+    gap: 2rem; 
+  }
+
+  .Profile {
+    gap: 12px;
+  }
+
+  .Social-Icon{
+    width: 40px;
+    height: 40px;
+  }
+
+  .fa-brands {
+    width: 28px;
+    height: 28px;
+  }
+  
+  .Nama, .Deskripsi {
+  text-align: center;
+  }
+
+  .List-Menu {
+    font-size: 64%;
+  }
+
+  .List-Menu i {
+    font-size: 140%;
+  }
+
+  .Img-Blog {
+    height: 120px;
+    border-radius: 12px;
+  }
+
+  .Card-Blog .Text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .Kategori-Container {
+    font-size: 80%;
+  }
+
+  .Kategori,
+  .Tgl {
+  padding: 0;
+  }
+
+  .Judul {
+    font-size: 100%;
+    line-height: 24px;
+  }
+
+  .Card-Blog .Isi {
+    font-size: 90%;
+  }
+
+  .Img-Portfolio {
+    height: 120px;
+  }
+
+  .Card-Portfolio .Text {
+    padding: 4px 16px;
+  }
+
+  .Card-Portfolio .Isi {
+    font-size: 90%;
+  }
+
+  .Container-Achi {
+    grid-template-columns: none;
+  }
+
+  .Card-Achi .Text {
+    padding: 4px 26px;
+  }
+
+  .Card-Achi .Isi {
+    font-size: 80%;
+  }
+
+  .Card-Achi .Tgl {
+    font-size: 70%;
+  }
 }

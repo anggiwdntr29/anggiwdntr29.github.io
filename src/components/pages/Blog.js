@@ -6,8 +6,8 @@ export default function Blog() {
   return (
     <div className="Blog-Container">
       {DataBlog.map(({ src, judul, deskripsi, link, tgl, kategori }, id) => (
-        <a href={link} className="Link">
-          <div key={id} className="Card-Blog">
+        <a key={id} href={link} className="Link">
+          <div className="Card-Blog">
             <img
               src={require(`../../image/${src}`)}
               alt={src}

@@ -18,7 +18,7 @@ const DataBlog = [
     link: "/",
   },
   {
-    id: 2,
+    id: 3,
     src: "sampel3.png",
     kategori: "Tutorial",
     tgl: "15 Januari 2023",

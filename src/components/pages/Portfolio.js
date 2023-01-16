@@ -6,8 +6,14 @@ export default function Portfolio() {
     <div className="Container-Portfolio">
       {DataPortfolio.map(
         ({ src, judul, kategori1, kategori2, deskripsi, link }, id) => (
-          <a href={link} className="Link" target="_blank" rel="noreferrer">
-            <div key={id} className="Card-Portfolio">
+          <a
+            key={id}
+            href={link}
+            className="Link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="Card-Portfolio">
               <img
                 src={require(`../../image/${src}`)}
                 alt={src}
