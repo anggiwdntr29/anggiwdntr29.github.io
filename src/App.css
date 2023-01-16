@@ -286,8 +286,22 @@ body {
     gap: 2rem; 
   }
 
-  .Profile {
-    gap: 12px;
+  .Container-Profile {
+    padding: 0 16px;
+  }
+
+  .Img-Container {
+    width: 100px;
+    height: 100px;
+  }
+
+  .Profile-Img {
+    width: 90px;
+    height: 90px;
+  }
+
+  .Deskripsi {
+    font-size: 80%;
   }
 
   .Social-Icon{
