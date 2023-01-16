@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, Routes, Route } from "react-router-dom";
-import "./Navbar.css";
-import Achievement from "./pages/Achievement";
+import "./../App.css";
+import Achievement from "./pages/Pencapaian";
 import Blog from "./pages/Blog";
 import Portfolio from "./pages/Portfolio";
 
