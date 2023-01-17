@@ -23,10 +23,12 @@ body {
 }
 
 .App {
-  padding: 1.5rem 5rem;
+  padding: 1.5rem 80px;
   display: grid; 
   grid-template-columns: 1fr 2fr;
   gap: 2rem; 
+
+
 }
 
 .Container-Profile {
@@ -286,8 +288,13 @@ body {
     gap: 2rem; 
   }
 
+  .Profile {
+    gap: 1rem;
+  }
+
   .Container-Profile {
     padding: 0 16px;
+    justify-items: center;
   }
 
   .Img-Container {
@@ -449,5 +456,44 @@ body {
 
   .Card-Achi .Tgl {
     font-size: 70%;
+  }
+}
+
+@media (min-width:1024px) and (max-width:1300px) {
+
+  .Img-Container {
+    width: 100px;
+    height: 100px;
+  }
+
+  .Profile-Img {
+    width: 90px;
+    height: 90px;
+  }
+  .Social-Icon{
+    width: 40px;
+    height: 40px;
+  }
+
+  .fa-brands {
+    width: 28px;
+    height: 28px;
+  }
+  
+
+
+  .List-Menu {
+    font-size: 64%;
+  }
+
+  .List-Menu i {
+    font-size: 140%;
+  }
+}
+
+@media (min-width:1380px) and (max-width:20000px) {
+  .App {
+    width: 1366px;
+    margin: auto;
   }
 }
