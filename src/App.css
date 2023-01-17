@@ -23,7 +23,7 @@ body {
 }
 
 .App {
-  padding: 1.5rem 80px;
+  padding: 1.5rem 5rem;
   display: grid; 
   grid-template-columns: 1fr 2fr;
   gap: 2rem; 

@@ -3,7 +3,7 @@ const DataPortfolio = [
     id: 1,
     src: "anggi-movie.jpg",
     judul: "Anggi Movie",
-    deskripsi: "Pencarian Film dengan API The Movie DB",
+    deskripsi: "Pencarian Film dengan API The Movie DB scr dea afrizal",
     kategori1: "React",
     kategori2: "Project Iseng",
     link: "https://anggiwdntr29.github.io/pencarianfilm1/",
