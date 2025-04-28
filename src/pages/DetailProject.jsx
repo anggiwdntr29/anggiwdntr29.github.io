@@ -29,7 +29,7 @@ const DetailProject = () => {
       </p>
       <div className="space-y-8 ">
         {item.images.map((image, index) => (
-          <div key={index} className="rounded overflow-hidden ring-2 ">
+          <div key={index} className="rounded overflow-hidden">
             <img loading="lazy" src={image} alt={""} />
           </div>
         ))}
