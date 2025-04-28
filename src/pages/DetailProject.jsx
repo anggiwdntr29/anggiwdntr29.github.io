@@ -13,9 +13,6 @@ const DetailProject = () => {
       key={item.id}
       className="dark:text-white transition-all duration-500 ease-in-out"
     >
-      <div className="relative group rounded-md overflow-hidden h-[460px] cursor-pointer">
-        <ImageBackdrop images={item.cover} />
-      </div>
       <div className="ring-2 p-4 space-y-6 rounded-md mt-6">
         <h1 className="font-montserrat font-semibold text-3xl ">
           {item.title}
@@ -33,12 +30,7 @@ const DetailProject = () => {
       <div className="space-y-8 ">
         {item.images.map((image, index) => (
           <div key={index} className="rounded overflow-hidden ring-2 ">
-            <img
-              loading="lazy"
-              src={image}
-              alt=""
-              className="transform transition-transform duration-500 hover:scale-105"
-            />
+            <img loading="lazy" src={image} alt={""} />
           </div>
         ))}
       </div>

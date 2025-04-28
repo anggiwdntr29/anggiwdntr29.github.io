@@ -55,6 +55,7 @@ const DataProject = [
       "A React Native app that allows users to purchase programming courses and manage attendance. Designed to make learning more accessible and organized on the go.",
     tags: ["React Native"],
     images: [
+      "https://anggiwdntr.online/storage/koding_app/1.png",
       "https://anggiwdntr.online/storage/koding_app/2.png",
       "https://anggiwdntr.online/storage/koding_app/3.png",
       "https://anggiwdntr.online/storage/koding_app/4.png",
