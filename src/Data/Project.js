@@ -65,18 +65,18 @@ const DataProject = [
   },
   {
     id: 1,
-    cover: "/image/travel/cover.png",
+    cover: "https://anggiwdntr.online/storage/travel/cover.png",
     title: "GreenPath Travel",
     subTitle: "Travel Website Concept Design",
     description:
       "A Vite and React-based website promoting eco-friendly travel packages in Bali, featuring a fast, lightweight, and engaging design.",
     tags: ["Vite", "React"],
     images: [
-      "/image/travel/home.png",
-      "/image/travel/about.png",
-      "/image/travel/tour.png",
-      "/image/travel/blog.png",
-      "/image/travel/contact.png",
+      "https://anggiwdntr.online/storage/travel/home.png",
+      "https://anggiwdntr.online/storage/travel/about.png",
+      "https://anggiwdntr.online/storage/travel/tour.png",
+      "https://anggiwdntr.online/storage/travel/blog.png",
+      "https://anggiwdntr.online/storage/travel/contact.png",
     ],
   },
 ];
