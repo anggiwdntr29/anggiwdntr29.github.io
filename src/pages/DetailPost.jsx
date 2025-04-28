@@ -8,13 +8,13 @@ const DetailPost = () => {
   const item = DataBlogs.find((item) => item.id.toString() === id);
 
   return (
-    <div className="mt-5 text-justify">
+    <div className="mt-5 text-justify dark:text-white transition-all duration-500 ease-in-out">
       {item ? (
         <>
           <h1 className="font-montserrat text-3xl font-semibold">
             {item.title}
           </h1>
-          <h1 className="font-roboto font-medium text-lg text-gray-500 mb-1">
+          <h1 className="font-roboto font-medium text-lg text-gray-500 dark:text-gray-400 mb-1">
             {item.date}
           </h1>
           <p className="font-normal text-xl leading-relaxed mb-1.5">

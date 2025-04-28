@@ -2,7 +2,7 @@ import React from "react";
 
 const BoxExp = ({ item }) => {
   return (
-    <div className="group flex flex-col md:flex-row md:gap-4 items-start hover:p-4 border border-transparent hover:border-black rounded-lg transition-all duration-300 cursor-default">
+    <div className="group flex flex-col md:flex-row md:gap-4 items-start hover:p-4 border border-transparent dark:hover:border-white hover:border-black rounded-lg transition-all duration-300 cursor-default">
       <h1 className="font-roboto font-medium text-sm md:text-lg text-gray-500">
         {item.date}
       </h1>

@@ -6,7 +6,7 @@ import { DataBlogs, DataExperience, DataProject } from "../Data";
 
 const HomeSection = ({ label, children, to }) => {
   return (
-    <section>
+    <section className="dark:text-white">
       <h1 className="font-montserrat text-3xl font-semibold mb-4 md:mb-6">
         {label}
       </h1>
@@ -27,10 +27,10 @@ const HomeSection = ({ label, children, to }) => {
 
 const Home = () => {
   return (
-    <div className="space-y-6">
-      <section className="ring rounded-lg px-3 py-5 md:px-4 md:py-6">
+    <div className="space-y-6 ">
+      <section className="ring rounded-lg px-3 py-5 md:px-4 md:py-6 dark:ring-white transition-all duration-500 ease-in-out">
         <div className="flex flex-col-reverse gap-4 md:gap-0 md:justify-between md:items-center md:flex-row">
-          <h1 className="font-montserrat text-3xl font-semibold">
+          <h1 className="font-montserrat text-3xl font-semibold dark:text-white">
             Anggi Widiantara
           </h1>
           <div className="flex gap-5">
@@ -46,12 +46,12 @@ const Home = () => {
           </div>
         </div>
         <div className="my-2 flex gap-1 items-center">
-          <MapPin className="text-gray-400" size={20} />
-          <span className="font-montserrat text-lg font-medium text-gray-400">
+          <MapPin className="text-gray-500 dark:text-gray-400" size={20} />
+          <span className="font-montserrat text-lg font-medium text-gray-500 dark:text-gray-400">
             Bali, Indonesia
           </span>
         </div>
-        <div className="font-montserrat text-lg md:text-xl font-medium text-justify leading-snug">
+        <div className="font-montserrat text-lg md:text-xl font-medium text-justify leading-snug dark:text-white">
           I am a Web and Mobile Developer focused on creating responsive and
           functional applications and websites
         </div>

@@ -44,19 +44,19 @@ const Carousel = () => {
       {/* Left fade */}
       <div
         className="absolute -left-1 top-0 bottom-0 w-20 z-10
-        bg-gradient-to-r from-white via-gray-50/70 to-transparent"
+        bg-gradient-to-r from-white via-white/70 to-transparent dark:from-night dark:via-night/70"
       />
 
       {/* Right fade */}
       <div
         className="absolute -right-1 top-0 bottom-0 w-20 z-10 
-        bg-gradient-to-l from-white via-gray-50/70 to-transparent"
+        bg-gradient-to-l from-white via-white/70 to-transparent dark:from-night dark:via-night/70"
       />
       <Marquee speed={60} pauseOnHover={true} className="mb-4" autoFill={true}>
         {IconData.slice(0, 7).map((item, index) => (
           <div
             key={index}
-            className="flex justify-center items-center gap-2 ring my-1 px-4 py-2 rounded-md mr-4"
+            className="flex justify-center items-center gap-2 ring my-1 px-4 py-2 rounded-md mr-4 dark:text-white transition-all duration-500 ease-in-out"
           >
             <item.icon size={24} />
             <span className="font-roboto text-md md:text-lg font-medium md:font-semibold">
@@ -69,7 +69,7 @@ const Carousel = () => {
         {IconData.slice(7, 15).map((item, index) => (
           <div
             key={index}
-            className="flex justify-center items-center gap-2 ring my-1 px-4 py-2 rounded-md mr-4"
+            className="flex justify-center items-center gap-2 ring my-1 px-4 py-2 rounded-md mr-4 dark:text-white transition-all duration-500 ease-in-out"
           >
             <item.icon size={24} />
             <span className="font-roboto text-md md:text-lg font-medium md:font-semibold">

@@ -19,7 +19,7 @@ const Social = ({ icon, title, subTitle, link }) => {
 
 const ContactMe = () => {
   return (
-    <div className="flex justify-center items-center mt-10">
+    <div className="flex justify-center items-center mt-10 dark:text-white transition-all duration-500 ease-in-out">
       <div className="ring-2 rounded-md p-4 ">
         <h1 className="text-xl md:text-3xl font-montserrat font-semibold mb-1.5">
           Contact me

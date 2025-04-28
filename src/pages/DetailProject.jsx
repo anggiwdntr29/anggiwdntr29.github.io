@@ -9,7 +9,10 @@ const DetailProject = () => {
   const item = DataProject.find((item) => item.id.toString() === id);
 
   return (
-    <div key={item.id}>
+    <div
+      key={item.id}
+      className="dark:text-white transition-all duration-500 ease-in-out"
+    >
       <div className="relative group rounded-md overflow-hidden h-[460px] cursor-pointer">
         <ImageBackdrop images={item.cover} />
       </div>
@@ -20,7 +23,7 @@ const DetailProject = () => {
         <div className="flex gap-4">
           <Tag tags={item.tags} />
         </div>
-        <h1 className="font-roboto text-gray-600 font-medium text-lg">
+        <h1 className="font-roboto dark:text-gray-400 text-gray-500 font-medium text-lg">
           {item.subTitle}
         </h1>
       </div>
