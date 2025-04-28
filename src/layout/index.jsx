@@ -39,7 +39,7 @@ const Layout = () => {
         <div className="text-2xl font-semibold mb-5">
           <NavLink to={"/"} onClick={closeSidebar}>
             <h1 className="inline-block relative group cursor-pointer">
-              <span>AnggiWdntr1</span>
+              <span>AnggiWdntr</span>
             </h1>
           </NavLink>
         </div>
