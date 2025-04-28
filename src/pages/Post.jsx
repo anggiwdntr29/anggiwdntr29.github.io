@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import { DataBlogs } from "../Data";
 import { BoxPost, Pagination } from "../components";
+import { useSearchParams } from "react-router";
 
 const Post = () => {
-  const [currentPage, setCurrentPage] = useState(1);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const currentPage = parseInt(searchParams.get("page") || "1");
+
   const postsPerPage = 5;
 
   const indexOfLastPost = currentPage * postsPerPage;
@@ -14,13 +17,13 @@ const Post = () => {
 
   const goToNextPage = () => {
     if (currentPage < totalPages) {
-      setCurrentPage(currentPage + 1);
+      setSearchParams({ page: (currentPage + 1).toString() });
     }
   };
 
   const goToPreviousPage = () => {
     if (currentPage > 1) {
-      setCurrentPage(currentPage - 1);
+      setSearchParams({ page: (currentPage - 1).toString() });
     }
   };
 

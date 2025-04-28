@@ -1,10 +1,13 @@
-import React, { useState } from "react";
+import React, { useEffect } from "react";
 import BoxProject from "../components/Box/BoxProject";
 import { DataProject } from "../Data";
 import { Pagination } from "../components";
+import { useSearchParams } from "react-router";
 
 const MyWork = () => {
-  const [currentPage, setCurrentPage] = useState(1);
+  const [searchParams, setSearchParams] = useSearchParams();
+  const currentPage = parseInt(searchParams.get("page") || "1");
+
   const postsPerPage = 3;
 
   const indexOfLastPost = currentPage * postsPerPage;
@@ -15,15 +18,22 @@ const MyWork = () => {
 
   const goToNextPage = () => {
     if (currentPage < totalPages) {
-      setCurrentPage(currentPage + 1);
+      setSearchParams({ page: (currentPage + 1).toString() });
     }
   };
 
   const goToPreviousPage = () => {
     if (currentPage > 1) {
-      setCurrentPage(currentPage - 1);
+      setSearchParams({ page: (currentPage - 1).toString() });
     }
   };
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, [currentPage]);
 
   return (
     <div>

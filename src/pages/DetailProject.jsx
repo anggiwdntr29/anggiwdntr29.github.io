@@ -31,6 +31,7 @@ const DetailProject = () => {
         {item.images.map((image, index) => (
           <div key={index} className="rounded overflow-hidden ring-2 ">
             <img
+              loading="lazy"
               src={image}
               alt=""
               className="transform transition-transform duration-500 hover:scale-105"
