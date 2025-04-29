@@ -1,4 +1,4 @@
-import { Github, Instagram, Mail, MapPin } from "lucide-react";
+import { Github, Instagram, Linkedin, Mail, MapPin } from "lucide-react";
 import React from "react";
 import { NavLink } from "react-router";
 import { BoxExp, BoxPost, BoxProject, Carousel, Social } from "../components";
@@ -38,6 +38,10 @@ const Home = () => {
             <Social
               icon={<Github />}
               link={"https://github.com/anggiwdntr29"}
+            />
+            <Social
+              icon={<Linkedin />}
+              link={"www.linkedin.com/in/anggiwidiantara"}
             />
             <Social
               icon={<Instagram />}
