@@ -41,7 +41,7 @@ const Home = () => {
             />
             <Social
               icon={<Linkedin />}
-              link={"www.linkedin.com/in/anggiwidiantara"}
+              link={"https://www.linkedin.com/in/anggiwidiantara/"}
             />
             <Social
               icon={<Instagram />}
