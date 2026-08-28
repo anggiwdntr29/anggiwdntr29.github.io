@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Kotak gelap di tema terang, terang di tema gelap, agar
+       tetap terlihat di tab browser mana pun. -->
+  <style>
+    .bg { fill: #0a0a0a; }
+    .fg { fill: #ffffff; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #fafafa; }
+      .fg { fill: #0a0a0a; }
+    }
+  </style>
+  <rect class="bg" width="64" height="64" rx="14" />
+  <text
+    class="fg"
+    x="32"
+    y="33"
+    text-anchor="middle"
+    dominant-baseline="central"
+    font-family="Space Grotesk, ui-sans-serif, system-ui, sans-serif"
+    font-size="26"
+    font-weight="600"
+    letter-spacing="-1"
+  >AW</text>
+</svg>

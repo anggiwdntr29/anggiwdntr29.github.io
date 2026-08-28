@@ -1,0 +1,73 @@
+@import "tailwindcss";
+@custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
+
+@theme {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+}
+
+section[id],
+[id="top"] {
+  scroll-margin-top: 3.5rem;
+}
+
+/* Pergantian tema: tema baru menyapu dari kiri ke kanan.
+   Snapshot lama diam di tempat, snapshot baru dibuka dengan
+   inset yang menyusut dari sisi kanan. */
+::view-transition-old(root),
+::view-transition-new(root) {
+  animation: none;
+  mix-blend-mode: normal;
+}
+
+::view-transition-old(root) {
+  z-index: 0;
+}
+
+::view-transition-new(root) {
+  z-index: 1;
+  /* Kurva yang naik merata: tanpa lonjakan di awal maupun
+     rem mendadak di akhir, sehingga sapuannya terasa mengalir. */
+  animation: theme-reveal 1100ms cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+@keyframes theme-reveal {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  /* Baris stack berhenti bagi yang memilih gerak minimal. */
+  [style*="marquee"] {
+    animation: none !important;
+  }
+
+  ::view-transition-new(root) {
+    animation: none;
+  }
+}
+
+/* Baris stack berjalan. Track berisi beberapa salinan set yang
+   sama; bergeser sejauh SATU set membuat perulangannya tak
+   terlihat, berapa pun jumlah salinannya. */
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(calc(-1 * var(--set-width, 50%)));
+  }
+}
